@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Comentários */
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #93e9e9; /*Cor de titulo*/
+    --cor2: #48b1ac; /*Cor dos botões*/
+    --cor3: #343538;
+    --titulo: "Montserrat", sans-serif;
+}
+
+body {
+    background: var(--cor1);
+    background: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ____________________________________________________________________________________________________ */
+/* Explicação Media Query */
+.layout {
+    /* centralizar conteúdo */
+    margin: 0 auto;
+}
+
+
+/* Smartphone Portrait - pé */
+.anime1,.anime2{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    background:var(--cor3) ;
+    height: 100vh;
+    position: fixed;
+    top:60px;
+    width: 100%;
+}
+
+header {
+    height: 60px;
+}
+
+.logo img {
+    padding: 5px 10px;
+}
+
+#check {
+    display: none;
+}
+
+.label_menu {
+    font-size: 3em;
+    position: fixed;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+/* Smartphone Landscape - deitado */
+@media(min-width:576px) {
+    body {}
+
+    .layout {
+        max-width: 540px;
+
+    }
+}
+
+/* Tablet Portrait - pé */
+@media(min-width:768px) {
+    body {
+
+    }
+
+    .layout {
+        max-width: 720px;
+        
+    }
+}
+
+/* Tablet Landscape - deitado */
+@media(min-width:992px) {
+    body {
+        
+    }
+
+    .layout {
+        max-width: 960px;
+        
+    }
+}
+
+/* PC */
+
+@media(min-width:1200px) {
+    body {
+       
+    }
+
+    .layout {
+        max-width: 1140px;
+        
+    }
+}
