@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aqui você irá econtrar...">
+    <meta name="keywords" content="jogos,games,playstation,xbox">
+    <meta name="author" content="Saulo Gomes do Carmo">
+    <title>Games</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header> <!--Tag Semântica - para o cabeçalho-->
+        <div class="layout container">
+            <dvi class="logo">
+
+                <img src="img/logo.png" alt="Imagem Mostrando a Logo do Site">
+            </dvi>
+            <nav class="menu"> <!--Tag semântica - para menu de navegação-->
+                <input type="checkbox" name="check" id="check">
+                <label for="check" class="label_menu">&#x2630;</label>
+                <ul>
+                    <li><a href="index.html">Contatos</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="video.html">Vídeos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner layout">
+        <div class="banner-anime ">
+            <img class="anime1" src="img/banner1.jpg" alt="Jogo God of War" title="Kratos">
+            <img class="anime2" src="img/banner2.jpg" alt="Jogo God of War" title="Kratos">
+        </div>
+    </div>
+
+    <section> <!--Tag Semântica - para o as sessões do site-->
+        <h1>Entre em contato</h1>
+        <div class="layout">
+            <form action="" class="form">
+                <fieldset id="usuario">
+                    <legend>
+                        Identificação do Usuário
+                    </legend>
+                    <p>
+                        <label for="fnome">Nome:</label>
+                        <input type="text" name="nome" id="fnome" placeholder="Nome Completo" required size="35"
+                            maxlength="50">
+                    </p>
+
+                    <p>
+                        <label for="femail">E-mail</label>
+                        <input type="email" name="email" id="femail" placeholder="Email mais usado" required
+                            autofocus="35" maxlength="50">
+                    </p>
+
+                    <p>
+                        <label for="fsenha">Senha</label>
+                        <input type="password" name="senha" id="fsenha" placeholder="8 digitos" required size="8"
+                            maxlength="8">
+                    </p>
+                
+
+                <fieldset id="sexo">
+                    <legend>
+                        Sexo
+                    </legend>
+
+                    <p><input type="radio" name="sexo" id="fmasc">
+                        <label for="fmasc">Masculino</label>
+                    </p>
+
+                    <p><input type="radio" name="sexo" id="ffem">
+                        <label for="ffem">Feminino</label>
+                    </p>
+
+                </fieldset>
+
+                
+                    <legend>
+                        Data de Nascimento
+                    </legend>
+
+                    <p>
+                        <label for="fnasc">Data de Nascimento: </label>
+                        <input type="date" name="nasc" id="fnasc">
+
+                    </p>
+
+                </fieldset>
+
+                <fieldset id="endereco">
+                    <legend>
+                        Endereço do Usuário
+                    </legend>
+                    <p>
+                        <label for="frua">Logradouro</label>
+                        <input type="text" name="rua" id="frua" size="35" maxlength="50" placeholder="Endereço:">
+                    </p>
+
+                    <p>
+                        <label for="fnum">Número</label>
+                        <input type="number" id="num" id="fnum" min="0" max="99999">
+                    </p>
+
+                    <p>
+                        <label for="fest">Estado</label>
+                        <select name="est" id="fest">
+                            <optgroup>
+                                <label for="Região Sudeste">
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="MG" selected>Minas Gerais</option>
+                                    <option value="ES">Espírito Santo</option>
+                                </label>
+                            </optgroup>
+
+                            <optgroup>
+                                <label for="Região Sul"></label>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="PR">Paraná</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                            </optgroup>
+                    </p>
+
+                    <p>
+                        <label for="fcid">Cidade</label>
+                        <input type="text" name="cid" id="fcid" size="35" maxlength="50" placeholder="Digite sua cidade">
+                    </p>
+                </fieldset>
+
+                
+
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                    <p>
+                        <label for="furg">Grau de Ungência</label>
+                    </p>
+
+                    <p> Min<input type="range" name="urg" id="furg" min="0" max="10" step="1">Max</p>
+
+                    <p>
+                        <textarea name="msg" id="msg" cols="35" rows="7"
+                            placeholder="Digite sua mensagem..."></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset id="pedido">
+                    <legend>Quero um console</legend>
+
+                    <p>
+                        <input type="checkbox" name="cons" id="fcons" checked>
+                        <label for="fcons">Gostaria de adquirir um console quando disponivél</label>
+                    </p>
+                    <p>
+                        <label for="fgame">Consoles:</label>
+                        <select name="game" id="fgame">
+                            <option value="PS">Playstation</option>
+                            <option value="Xbox">XBOX</option>
+                            <option value="Wii">Nintendo</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="fcor">Cor:</label>
+                        <input type="color" name="Cor" id="fcor" value="#000ff">
+                    </p>
+
+                    <p>
+                        <label for="fqtd">Quantidade:</label>
+                        <input type="number" name="qtde" id="fqtd" min="0" max="5">
+                    </p>
+                    <p>
+                        <label for="ftot">Preço total: R$</label>
+                        <input type="text" name="tot" id="ftot" placeholder="Total a pagar" readonly>
+                    </p>
+
+                    <div>
+                        <button type="submit" name="enviar">Enviar </button>
+                        <button type="reset" name="limpar">Limpar</button>
+                    </div>
+
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy;2024.Desenvolvido para curso técnico de informática</p>
+
+            <p>
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"> <img src="img/facebook.png"
+                        alt="Logo do facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"> <img src="img/instagram.png"
+                        alt="Logo do instagram"></a>
+                <a href="https://x.com/?lang=pt-br" target="_blank"> <img src="img/x_twitter.png"
+                        alt="Logo do x_twitter"></a>
+                <a href="https://github.com/" target="_blank"> <img src="img/github.png" alt="Logo do github"></a>
+                <a href="https://www.linkedin.com/" target="_blank"> <img src="img/linkedin.png"
+                        alt="Logo do linkedin"></a>
+                <a href="https://www.youtube.com/" target="_blank"> <img src="img/youtube.png"
+                        alt="Logo do youtube"></a>
+            </p>
+
+        </div>
+    </footer>
+</body>
+
+</html>
