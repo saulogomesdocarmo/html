@@ -181,6 +181,47 @@ textarea {
 }
 #musica{
     margin-bottom: 15px;
+
+}
+
+
+/*Página de Fotos*/
+.fotos{
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria{
+    width: 82vw;
+    list-style: none;
+    margin: 30px auto;
+}
+
+.galeria li span{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color:var(--cor5)
+}
+
+.galeria li{
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.galeria img{
+    background: var(--cor2);
+    padding: 5px;
+    width: 280px;
+    height: 200px;
+}
+
+.aumentar:hover{
+    transform: scale(1.3);
+}
+
+.layout p{
+    font-family: var(--texto);
 }
 /* Smartphone Landscape - deitado */
 @media(min-width:576px) {
@@ -213,8 +254,22 @@ textarea {
 
     #filme{
         height: 78vh;
-
     }
+}
+/* Pagina Fotos*/
+.galeria{
+    width: 85vw;
+}
+.galeria li {
+    text-align: center;
+}
+
+.galeria img{
+    width: 280px;
+    height: 210px;
+}
+.galeria span{
+    display: none;
 }
 
 
@@ -264,7 +319,22 @@ textarea {
     #filme{
         width: 65vh;
     }
-}
+
+    /*Página Fotos*/
+    .fotos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    } 
+    .galeria {
+        width: 81vw;
+    }
+    
+    .galeria li{
+        text-align: center;
+        float: left;
+    }
+}   
 
 
 /* Tablet Landscape - deitado */
@@ -292,6 +362,11 @@ textarea {
     /* Página Video*/
     #filme{
         height: 65vh;
+    }
+
+    /*Página Fotos*/
+    .galeria{
+        width: 61vw;
     }
 }
 
@@ -402,11 +477,18 @@ textarea {
     }
 
     #filme{
-        width: 35vw;
-        height: 50vw;
+        width: 30vw;
+        height: 20vw;
         position: relative;
         display: block;
-        margin-right:500px ;
+        margin-right:600px ;
+        margin-top: 200px;
         margin-bottom: 480px;
+    }
+
+
+    /* Página Fotos*/
+    .galeria{
+        width: 73vw;
     }
 }
